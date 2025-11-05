@@ -1,0 +1,6 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#F8D979"/> <!-- Color amarillo para el botón -->
+    <corners android:radius="25dp"/> <!-- Bordes redondeados -->
+    <stroke android:width="2dp" android:color="#F8E29F"/> <!-- Borde más oscuro para darle profundidad -->
+    <padding android:left="16dp" android:right="16dp" android:top="8dp" android:bottom="8dp"/>
+</shape>

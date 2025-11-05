@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/border"
+    android:divider="@drawable/border_tabla"
+    android:showDividers="middle"
+    android:padding="4dp">
+
+    <!-- 🔸 ENCABEZADO -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#F7F1C2"
+        android:padding="6dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:id="@+id/SriC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="SRI: "
+                android:textStyle="bold"
+                android:gravity="left"
+                android:textSize="14sp"
+                android:textColor="#2E2E2E" />
+
+            <TextView
+                android:id="@+id/FacturaC"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="right"
+                android:paddingLeft="6dp"
+                android:textStyle="bold"
+                android:text="FECHA:"
+                android:textSize="14sp"
+                android:textColor="#2E2E2E" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtVendedor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="VENDEDOR: 33 RODRIGUEZ"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            android:textColor="#333333"
+            android:gravity="center" />
+    </LinearLayout>
+
+    <!-- 🔹 CABECERA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="#E8DFA4"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:id="@+id/lblTipo"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="TIPO DOC."
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/lblValorFactura"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="VALOR FACT."
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/lblValorDoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="SALDO FACT."
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/lblCheque"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="DET. CHEQUE"
+            android:textColor="#2E2E2E"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 🔹 FILA DE DATOS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingVertical="6dp">
+
+        <TextView
+            android:id="@+id/txtTipoDoc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="Fact Crédito" />
+
+        <TextView
+            android:id="@+id/txtValorFact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+        <TextView
+            android:id="@+id/txtSaldoFact"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+        <TextView
+            android:id="@+id/txtDetCheque"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="---" />
+    </LinearLayout>
+
+    <!-- 🔹 PIE -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3F3F3"
+        android:padding="6dp">
+
+        <TextView
+            android:id="@+id/txtDiasFactura"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emitida hace 99 día(s)"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 🔘 BOTÓN DETALLES -->
+    <Button
+        android:id="@+id/btnDetalles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:text="Ver Detalles"
+        android:textSize="14sp"
+        android:padding="10dp"
+        android:backgroundTint="#F7F1C2"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        android:elevation="3dp"
+        android:radius="8dp" />
+</LinearLayout>

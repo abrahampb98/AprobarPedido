@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginVertical="6dp"
+    android:layout_marginHorizontal="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="4dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#22000000"
+    android:clickable="false"
+    android:focusable="false"
+    android:foreground="@null"
+    android:backgroundTint="@android:color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="12dp"
+        android:paddingVertical="10dp">
+
+        <!-- 🔹 Texto de referencia -->
+        <TextView
+            android:id="@+id/txtReferenciaP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="REF-000123 LARGO DE PRUEBA PARA REVISAR AJUSTE DE TEXTO"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="15sp"
+            android:maxLines="2"
+            android:ellipsize="end"
+            android:scrollHorizontally="false"
+            android:focusable="false"
+            android:clickable="false"
+            android:longClickable="false"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnVerMasP"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginEnd="12dp"
+            tools:ignore="NotSibling" />
+
+        <!-- 🔹 Botón de acción -->
+        <ImageButton
+            android:id="@+id/btnVerMasP"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_precios"
+            android:scaleType="centerInside"
+            android:tint="@color/black"
+            android:contentDescription="Ver más"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.card.MaterialCardView>

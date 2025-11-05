@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">AprobarPedido</string>
+    <string name="str_ipPublica">181.39.14.139</string>
+    <string name="str_ipLocal">168.200.1.3</string>
+    <string name="str_Pedidos">2644</string>
+    <string name="str_DesbloquearPedidos">2645</string>
+    <string name="str_CxC">2646</string>
+    <string name="str_AprobarPedidos">2645</string>
+    <string name="str_Rentabilidad">1776</string>
+    <string name="str_precios">412</string>
+</resources>

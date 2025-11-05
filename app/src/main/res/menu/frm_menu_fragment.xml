@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/homeFragment"
+        android:icon="@drawable/ic_pedido"
+        android:title="Pedidos" />
+    <item android:id="@+id/rentabilidadFragment"
+        android:icon="@drawable/ic_rentabilidad"
+        android:title="Rentabilidad" />
+    <item android:id="@+id/preciosFragment"
+        android:icon="@drawable/ic_precios"
+        android:title="Precios" />
+    <item android:id="@+id/perfilFragment"
+        android:icon="@drawable/ic_perfil"
+        android:title="Perfil" />
+</menu>

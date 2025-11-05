@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/border"
+    android:divider="@drawable/border_tabla"
+    android:showDividers="middle"
+    android:padding="4dp">
+
+
+    <!-- 🔹 CABECERA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="#E8DFA4"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cupo Asignado"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cupo Utilizado"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cupo Disponible"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 🔹 FILA DE DATOS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingVertical="6dp">
+
+        <TextView
+            android:id="@+id/txtCupoC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="Fact Crédito" />
+
+        <TextView
+            android:id="@+id/txtCupoUtl"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+        <TextView
+            android:id="@+id/txtCupoDisponible"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#E8DFA4"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Patrimonio"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingVertical="6dp">
+
+        <TextView
+            android:id="@+id/txtPatrimonioC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="Fact Crédito" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#E8DFA4"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Descripción"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:paddingVertical="6dp">
+
+        <TextView
+            android:id="@+id/txtDescripcionC"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="Fact Crédito" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="#E8DFA4"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Valor Bruto"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Valor Descuento"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Valor Seguro"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 🔹 FILA DE DATOS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingVertical="6dp">
+
+        <TextView
+            android:id="@+id/txtValorB"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="Fact Crédito" />
+
+        <TextView
+            android:id="@+id/txtValorDesc"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+        <TextView
+            android:id="@+id/txtValorSeg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="#E8DFA4"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Valor Iva"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Valor Flete"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Valor Total"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 🔹 FILA DE DATOS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingVertical="6dp">
+
+        <TextView
+            android:id="@+id/txtValorIva"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="Fact Crédito" />
+
+        <TextView
+            android:id="@+id/txtValorFlete"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+        <TextView
+            android:id="@+id/txtValorTot"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+    </LinearLayout>
+
+</LinearLayout>

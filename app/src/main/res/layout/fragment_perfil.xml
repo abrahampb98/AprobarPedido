@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp">
+
+    <!-- Imagen de perfil -->
+    <ImageView
+        android:id="@+id/imgPerfil"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/ic_usuario"
+        android:contentDescription="Imagen de perfil"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp" />
+
+    <!-- Nombre del usuario -->
+    <TextView
+        android:id="@+id/txtNombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="16sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/imgPerfil"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+
+
+    <!-- Botón manual de usuario -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnManualUsuario"
+        style="@style/Widget.Button.Custom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Manual de Usuario"
+        app:layout_constraintTop_toBottomOf="@id/txtNombreUsuario"
+        android:layout_marginTop="12dp" />
+
+    <!-- Botón cerrar sesión (verde) -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnCerrarSesion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cerrar sesión"
+        android:backgroundTint="@android:color/darker_gray"
+        android:textColor="@android:color/white"
+        app:layout_constraintTop_toBottomOf="@id/btnManualUsuario"
+        android:layout_marginTop="12dp" />
+
+    <!-- Versión de la app -->
+    <TextView
+        android:id="@+id/txtVersionApp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Version App: 1.0.3"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="16dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="8dp"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
+
+    <!-- Nombre empresa -->
+    <TextView
+        android:id="@+id/txtEmpresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cotzul S.A."
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="10dp"/>
+
+    <!-- Usuario -->
+    <TextView
+        android:id="@+id/txtUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario: Ab. Angel Ledesma Marriot"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/txtEmpresa"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="4dp"
+        android:layout_marginStart="10dp"/>
+
+    <!-- Tipo -->
+    <TextView
+        android:id="@+id/txtTipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo:"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/txtUsuario"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="10dp"/>
+
+    <!-- Spinner -->
+    <Spinner
+        android:id="@+id/spinnerOpciones"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:minHeight="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginHorizontal="16dp"
+        android:padding="6dp"
+        android:background="@drawable/spinner_background"
+        app:layout_constraintTop_toBottomOf="@id/txtTipo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Cabecera de tabla -->
+    <LinearLayout
+        android:id="@+id/layout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        android:paddingVertical="6dp"
+        android:paddingHorizontal="4dp"
+        android:background="#F5F5F5"
+        android:elevation="1dp"
+        app:layout_constraintTop_toBottomOf="@id/spinnerOpciones"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="#Doc."
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:text="Cliente"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Valor"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Estado"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small"
+            android:textStyle="bold"
+            android:gravity="center"/>
+    </LinearLayout>
+
+    <!-- RecyclerView adaptable -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewDetalle"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingBottom="4dp"
+        app:layout_constraintTop_toBottomOf="@id/layout"
+        app:layout_constraintBottom_toTopOf="@id/cabecera"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Cabecera -->
+    <TextView
+        android:id="@+id/cabecera"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cabecera"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        android:layout_marginTop="6dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintTop_toBottomOf="@id/recyclerViewDetalle"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Layout de cabecera del pedido -->
+    <LinearLayout
+        android:id="@+id/layoutCabeceraPedido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginHorizontal="8dp"
+        android:elevation="2dp"
+        android:padding="8dp"
+        android:background="@drawable/border"
+        app:layout_constraintTop_toBottomOf="@id/cabecera"
+        app:layout_constraintBottom_toTopOf="@id/btnVerDetalles"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="8dp">
+
+        <!-- Nombre Cliente -->
+        <TextView
+            android:id="@+id/lblCliente"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nombre Cliente:"
+            android:textStyle="bold"
+            android:textSize="@dimen/font_size_small"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/txtClienteAP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/font_size_small"
+            android:textColor="@android:color/black"/>
+
+        <!-- Documento / Vendedor -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:text="#Docum."
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_small"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="Vendedor"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_small"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:id="@+id/txtDocumAP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:textSize="@dimen/font_size_small"
+                android:textColor="@android:color/black"/>
+
+            <TextView
+                android:id="@+id/txtVendedorAP"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:textSize="@dimen/font_size_small"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+
+        <!-- Total -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingVertical="4dp">
+
+            <TextView
+                android:id="@+id/lblTotal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="end"
+                android:text="Total($)"
+                android:textStyle="bold"
+                android:textSize="@dimen/font_size_small"
+                android:textColor="@android:color/black"
+                android:paddingEnd="6dp"/>
+
+            <TextView
+                android:id="@+id/txtTotalAP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:textSize="@dimen/font_size_small"
+                android:textColor="@android:color/black"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Botón fijo -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnVerDetalles"
+        style="@style/Widget.Button.Custom"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Ver detalles"
+        android:textColor="@color/black"
+        android:textAllCaps="true"
+        android:textStyle="bold"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginBottom="16dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Overlay -->
+    <FrameLayout
+        android:id="@+id/overlay_container"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:elevation="20dp"
+        android:visibility="gone" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

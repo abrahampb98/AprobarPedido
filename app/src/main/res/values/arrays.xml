@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="headers_rentabilidad_vendedor">
+        <item>TIPO</item>
+        <item>VENDEDOR</item>
+        <item>A(TOT - DESC)</item>
+        <item>B(COSTO. NAC. KARDEX)</item>
+        <item>C(UTI. NAC. KARDEX)</item>
+        <item>% A/B</item>
+    </string-array>
+
+
+    <string-array name="headers_rentabilidad_cliente">
+        <item>CODIGO</item>
+        <item>CLIENTE</item>
+        <item>A(TOT - DESC)</item>
+        <item>B(A + SEGURO)</item>
+        <item>C(COST. PROM KARDEX)</item>
+        <item>D(UTILIDAD KARDEX)</item>
+        <item>% A/T.A</item>
+        <item>% D/T.D</item>
+        <item>% A/C</item>
+        <item>% B/C</item>
+    </string-array>
+
+
+    <string-array name="headers_rentabilidad_actual">
+        <item>BODEGA</item>
+        <item>MES</item>
+        <item>B((A)+SEGURO)</item>
+        <item>C(COST. PROM)</item>
+        <item>D(UT. KARDEX)</item>
+        <item> % B/C</item>
+
+    </string-array>
+
+</resources>

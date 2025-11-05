@@ -1,0 +1,46 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.AprobarPedido" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Colores principales -->
+        <item name="colorPrimary">@android:color/darker_gray</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/black</item>
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Color de status bar -->
+        <item name="android:statusBarColor">#F4E1B5</item>
+    </style>
+
+    <style name="Widget.Button.Custom" parent="Widget.MaterialComponents.Button">
+        <item name="backgroundTint">@null</item>   <!-- OBLIGATORIO -->
+        <item name="android:background">@drawable/button_background</item>
+        <item name="android:textColor">@android:color/white</item>
+    </style>
+
+    <style name="FullScreenDialogStyle" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:windowCloseOnTouchOutside">false</item>
+        <item name="android:windowBackground">@android:color/white</item>
+    </style>
+
+    <style name="CustomMaterialDatePickerTheme" parent="ThemeOverlay.MaterialComponents.MaterialCalendar">
+        <!-- Fondo degradado -->
+        <item name="android:windowBackground">@drawable/background_datatime</item>
+
+        <!-- Cabecera negra -->
+        <item name="colorPrimaryContainer">@android:color/black</item>
+        <item name="colorOnPrimaryContainer">@android:color/white</item>
+
+        <!-- Colores generales -->
+        <item name="colorOnSurface">@color/black</item>
+        <item name="colorPrimary">@color/black</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <!-- Color de selección (día elegido) -->
+        <item name="colorSecondaryContainer">@color/black</item>
+        <item name="colorOnSecondaryContainer">@color/white</item>
+
+        </style>
+
+</resources>

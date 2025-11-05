@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/loginFragment">
+
+    <!-- 🔹 Fragment de Login -->
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.cotzul.aprobarpedido.ui.fragment.LoginFragment"
+        android:label="Login">
+        <action
+            android:id="@+id/action_loginFragment_to_homeFragment"
+            app:destination="@id/homeFragment"
+            app:popUpToInclusive="true"
+            app:popUpTo="@id/loginFragment"
+            app:launchSingleTop="true" />
+    </fragment>
+
+    <!-- 🔹 Fragment de Home -->
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.cotzul.aprobarpedido.ui.fragment.HomeFragment"
+        android:label="Pedidos"
+        tools:layout="@layout/fragment_home">
+
+        <!-- Acción hacia EditarPedido -->
+        <action
+            android:id="@+id/action_homeFragment_to_editarPedidoFragment"
+            app:destination="@id/editarPedidoFragment"
+            app:enterAnim="@anim/slide_in_right"
+            app:exitAnim="@anim/slide_out_left"
+            app:popEnterAnim="@anim/slide_in_left"
+            app:popExitAnim="@anim/slide_out_right"
+            app:launchSingleTop="true" />
+    </fragment>
+
+    <!-- 🔹 Fragment de Editar Pedido -->
+    <fragment
+        android:id="@+id/editarPedidoFragment"
+        android:name="com.cotzul.aprobarpedido.ui.fragment.EditarPedidoFragment"
+        android:label="Editar Pedido"
+        tools:layout="@layout/fragment_editar_pedido" />
+
+    <!-- 🔹 Fragment de Rentabilidad -->
+    <fragment
+        android:id="@+id/rentabilidadFragment"
+        android:name="com.cotzul.aprobarpedido.ui.fragment.RentabilidadFragment"
+        android:label="Rentabilidad"
+        tools:layout="@layout/fragment_rentabilidad" />
+
+    <!-- 🔹 Fragment de Precios -->
+    <fragment
+        android:id="@+id/preciosFragment"
+        android:name="com.cotzul.aprobarpedido.ui.fragment.PreciosFragment"
+        android:label="Precios"
+        tools:layout="@layout/fragment_precios" />
+
+    <!-- 🔹 Fragment de Perfil -->
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.cotzul.aprobarpedido.ui.fragment.PerfilFragment"
+        android:label="Perfil"
+        tools:layout="@layout/fragment_perfil" />
+
+</navigation>

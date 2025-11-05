@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/border"
+    android:divider="@drawable/border_tabla"
+    android:showDividers="middle"
+    android:padding="4dp">
+
+
+    <!-- 🔹 CABECERA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:background="#E8DFA4"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:id="@+id/txtReferenciaD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Referencia"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 🔹 FILA DE DATOS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/txtTituloD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="Fact Crédito" />
+
+        <TextView
+            android:id="@+id/txtMarcaD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <TextView
+            android:id="@+id/txtSubFamiliaD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="Fact Crédito" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="#E8DFA4"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Cantidad"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Precio Pedido"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Precio Unitario"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingVertical="6dp">
+
+        <TextView
+            android:id="@+id/txtCantidadD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:background="@android:color/white"
+            android:textColor="#333333"
+            android:text="10.00" />
+
+        <TextView
+            android:id="@+id/txtVPrecioD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingVertical="8dp"
+            android:textColor="#333333"
+            android:text="$ 3.16" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:gravity="top|center_horizontal"
+            android:baselineAligned="false"
+            android:paddingVertical="0dp">
+
+            <TextView
+                android:id="@+id/txtPrecioUniD"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:gravity="center"
+                android:text="$ 3.16"
+                android:textColor="#333333" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnCambiarD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="Cambiar"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:textColor="@android:color/black"
+                android:textSize="12sp"
+                app:cornerRadius="18dp"
+                app:elevation="3dp"
+                app:backgroundTint="#F3C94F" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:background="#E8DFA4"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Costo Promedio"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subtotal CostProm"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Subtotal"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:paddingVertical="6dp">
+
+        <TextView
+            android:id="@+id/txtCostoPromD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="1.0" />
+
+        <TextView
+            android:id="@+id/txtSubtotalD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+        <TextView
+            android:id="@+id/txtTotalD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingVertical="4dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Margen:"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="right"
+            android:textSize="13sp" />
+
+        <TextView
+            android:id="@+id/txtMargenD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="1.99"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:paddingLeft="5dp"
+            android:gravity="left"
+            android:textSize="13sp" />
+
+    </LinearLayout>
+
+    <CheckBox
+        android:id="@+id/chkAceptarPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Aceptar precio vendedor"
+        android:textStyle="bold"
+        android:textSize="14sp"
+        android:textColor="#2E2E2E"
+        android:padding="6dp"
+        android:buttonTint="#EFBA1D"
+        android:layout_marginTop="6dp" />
+</LinearLayout>

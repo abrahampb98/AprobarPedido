@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginBottom="8dp"
+    android:background="@drawable/border"
+    android:divider="@drawable/border_tabla"
+    android:showDividers="middle"
+    android:padding="4dp">
+
+
+    <!-- 🔹 CABECERA -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:background="#E8DFA4"
+        android:paddingVertical="4dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:text="#"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:text="Observacion"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Usuario"
+            android:textStyle="bold"
+            android:textColor="#2E2E2E"
+            android:gravity="center"
+            android:textSize="13sp" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Fecha"
+            android:textColor="#2E2E2E"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="13sp" />
+    </LinearLayout>
+
+    <!-- 🔹 FILA DE DATOS -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        android:paddingVertical="6dp">
+
+        <TextView
+            android:id="@+id/txtSecD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight=".4"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="123" />
+
+        <TextView
+            android:id="@+id/txtObservacionD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1.6"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+        <TextView
+            android:id="@+id/txtUsuarioD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="$ 219.07" />
+
+        <TextView
+            android:id="@+id/txtFechaD"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="#333333"
+            android:text="---" />
+    </LinearLayout>
+</LinearLayout>

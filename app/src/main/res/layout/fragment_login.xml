@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@drawable/background"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="24dp"
+        android:paddingHorizontal="16dp">
+
+        <!-- Logo -->
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:src="@drawable/cotzul"
+            android:contentDescription="Logo Cotzul"
+            app:layout_constraintWidth_percent="0.5"
+            app:layout_constraintDimensionRatio="2:1"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="80dp" />
+
+        <!-- Subtítulo -->
+        <TextView
+            android:id="@+id/txtSubtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Aprobar Pedido"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:padding="12dp"
+            android:fontFamily="sans-serif-medium"
+            app:layout_constraintTop_toBottomOf="@id/imgLogo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="16dp" />
+
+        <!-- Contenedor del login -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardLogin"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/txtSubtitle"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginTop="40dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="6dp"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <!-- Usuario -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutUser"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundMode="none"
+                    app:hintEnabled="false">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtUser"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Usuario"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:inputType="text"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textColorHint="#777"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Contraseña -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layoutPassword"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:boxBackgroundMode="none"
+                    app:hintEnabled="false"
+                    app:endIconMode="password_toggle"
+                    android:layout_marginTop="12dp">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="Contraseña"
+                        android:background="@drawable/edittext_background"
+                        android:padding="12dp"
+                        android:inputType="textPassword"
+                        android:textColor="?android:attr/textColorPrimary"
+                        android:textColorHint="#777"/>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <!-- Botón Iniciar sesión -->
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/btnLogin"
+                    style="@style/Widget.Button.Custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Iniciar sesión"
+                    android:textAllCaps="false"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@android:color/black"
+                    app:cornerRadius="12dp"
+                    app:elevation="4dp"
+                    android:layout_marginTop="24dp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Espaciador inferior -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            app:layout_constraintTop_toBottomOf="@id/cardLogin"
+            app:layout_constraintBottom_toBottomOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

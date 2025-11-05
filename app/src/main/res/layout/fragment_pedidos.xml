@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/rootLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/seleccion_item"
+    android:paddingVertical="6dp"
+    android:paddingHorizontal="4dp">
+
+    <!-- Contenedor horizontal -->
+    <LinearLayout
+        android:id="@+id/layoutItemPedido"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tvDocumento"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small"
+            android:textStyle="bold"
+            tools:text="001245" />
+
+        <TextView
+            android:id="@+id/tvCliente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small"
+            tools:text="Juan Pérez" />
+
+        <!--
+        <TextView
+            android:id="@+id/tvVendedor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small"
+            tools:text="Carlos" />
+        -->
+
+        <TextView
+            android:id="@+id/tvValor"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small"
+            tools:text="$152.30" />
+
+        <TextView
+            android:id="@+id/tvEstado"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textSize="@dimen/font_size_small"
+            tools:text="Aprobado" />
+    </LinearLayout>
+
+    <!-- Línea divisoria inferior -->
+    <View
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:background="#AEA7A7"
+        app:layout_constraintTop_toBottomOf="@id/layoutItemPedido"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

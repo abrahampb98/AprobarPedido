@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="font_size_small">13sp</dimen>
+    <dimen name="font_size_medium">16sp</dimen>
+    <dimen name="font_size_large">20sp</dimen>
+    <dimen name="font_size_cardView">12sp</dimen>
+    <dimen name="font_size_Facturas">16sp</dimen>
+    <dimen name="font_size_PreciosStock">16sp</dimen>
+    <dimen name="font_size_PreciosStock_Small">10sp</dimen>
+    <dimen name="font_size_Recibo">16sp</dimen>
+    <dimen name="font_size_Ruta">12sp</dimen>
+    <dimen name="font_size_Ruta_small">14sp</dimen>
+    <dimen name="font_size_smallProforma">10sp</dimen>
+</resources>

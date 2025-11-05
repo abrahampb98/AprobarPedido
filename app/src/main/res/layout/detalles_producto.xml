@@ -1,0 +1,443 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:padding="16dp"
+    android:fitsSystemWindows="true"
+    android:scrollbars="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:clipToPadding="false"
+        android:clipChildren="false">
+
+        <!-- 🟦 CABECERA: DESCRIPCIÓN -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="5dp"
+            app:strokeColor="#22000000"
+            app:strokeWidth="1dp"
+            android:layout_marginBottom="8dp"
+            android:backgroundTint="#F8F9FB">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="12dp">
+
+                <!-- 🔹 Etiqueta -->
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Descripción:"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:layout_marginEnd="6dp" />
+
+                <!-- 🔹 Valor (texto largo visible completo) -->
+                <TextView
+                    android:id="@+id/valueItem1"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Valor"
+                    android:textColor="@color/black"
+                    android:textSize="16sp"
+                    android:ellipsize="none"
+                    android:scrollHorizontally="false"
+                    android:singleLine="false" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <!-- 🟩 DETALLES DE STOCK -->
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="12dp"
+            app:cardElevation="4dp"
+            app:strokeColor="#20000000"
+            app:strokeWidth="1dp"
+            android:layout_marginBottom="12dp"
+            android:backgroundTint="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:divider="?android:attr/listDivider"
+                android:showDividers="middle"
+                android:padding="8dp">
+
+                <!-- Cada fila -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stock Telerepuestos:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 1"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stock Exh. Telerepuestos:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 2"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stock Portrans:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 3"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stock Promarket:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 4"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stock Exh. Promarket:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 5"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stock ReparadoAlm:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 6"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Stock DepComercial:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 7"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="SubDistribuidor:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 8"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="DsctoSubDistr:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 9"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Contado:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 10"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Crédito:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 11"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cartón Master:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 12"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Cartón Estándar:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 13"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Sku:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 14"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:paddingVertical="6dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Peso CE:"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/valueItem16"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valor 15"
+                        android:textColor="@color/black"
+                        android:textSize="15sp" />
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>
