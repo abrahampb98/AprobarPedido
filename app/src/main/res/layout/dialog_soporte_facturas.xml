@@ -4,6 +4,7 @@
     android:layout_height="wrap_content"
     android:fillViewport="true"
     android:background="@drawable/background"
+    android:contentDescription="Ver más detalles del producto"
     android:padding="8dp">
 
     <LinearLayout

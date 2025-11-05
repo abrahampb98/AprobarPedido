@@ -38,7 +38,7 @@
     <EditText
         android:id="@+id/edtBuscarReferencia"
         android:layout_width="0dp"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
         android:hint="Buscar por referencia"
         android:inputType="text"
         android:padding="10dp"
